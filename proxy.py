@@ -30,4 +30,4 @@ def home():
 
 if __name__ == "__main__":
     threading.Thread(target=stream_mastodon, daemon=True).start()
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=15000)
