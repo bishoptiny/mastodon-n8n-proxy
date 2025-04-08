@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  mastodon-proxy:
+    build: .
+    container_name: mastodon-n8n-proxy
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
